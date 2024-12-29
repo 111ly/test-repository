@@ -22,6 +22,21 @@ layout: default
     }
     h1 {
       margin-bottom: 20px;
+      color: #333;
+      font-size: 2.5em;
+    }
+    h2 {
+      margin-top: 20px;
+      color: #555;
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #666;
+      max-width: 800px;
+      text-align: center;
+      margin: 10px 0;
     }
     .btn-container {
       display: flex;
@@ -64,13 +79,41 @@ layout: default
     .btn-about:hover {
       background-color: #138496;
     }
+    .intro-section {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      max-width: 900px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>luye</h1>
+    <h1>Welcome to my blog - luyespace</h1>
+
+    <!-- 自我介绍部分 -->
+    <div class="intro-section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Luye, a passionate developer with a keen interest in technology and problem-solving. 
+        I specialize in web development and software engineering, and I'm always looking for ways 
+        to improve my skills and stay up-to-date with the latest trends in the industry.
+      </p>
+      <p>
+        When I'm not coding, you can find me reading tech blogs, exploring new programming languages, 
+        or contributing to open-source projects. My goal is to create meaningful applications 
+        that make a difference in the world. 
+      </p>
+      <p>
+        Feel free to connect with me through the links below or explore my projects on GitHub and Gitee.
+      </p>
+    </div>
+
+    <!-- 按钮部分 -->
     <div class="btn-container">
-      <!-- 添加按钮 -->
       <a href="https://i.csdn.net/#/user-center/profile?spm=1000.2115.3001.5111" class="btn btn-primary">我的CSDN</a>
       <a href="https://gitee.com/your_gitee_username" class="btn btn-secondary">我的Gitee</a>
       <a href="#my" class="btn btn-tertiary">我的</a>
