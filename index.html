@@ -18,14 +18,26 @@ layout: default
       min-height: 100vh;
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4; /* 背景色调整为更柔和 */
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
     }
     .btn {
       display: inline-block;
-      padding: 10px 20px;
-      margin: 10px;
+      padding: 12px 20px;
       text-decoration: none;
       color: white;
+      font-size: 16px;
       border-radius: 5px;
+      text-align: center;
       transition: background-color 0.3s ease;
     }
     .btn-primary {
@@ -40,15 +52,30 @@ layout: default
     .btn-secondary:hover {
       background-color: #5a6268;
     }
+    .btn-tertiary {
+      background-color: #28a745;
+    }
+    .btn-tertiary:hover {
+      background-color: #218838;
+    }
+    .btn-about {
+      background-color: #17a2b8;
+    }
+    .btn-about:hover {
+      background-color: #138496;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>luye</h1>
-    <nav>
+    <div class="btn-container">
+      <!-- 添加按钮 -->
       <a href="https://i.csdn.net/#/user-center/profile?spm=1000.2115.3001.5111" class="btn btn-primary">我的CSDN</a>
       <a href="https://gitee.com/your_gitee_username" class="btn btn-secondary">我的Gitee</a>
-    </nav>
+      <a href="#my" class="btn btn-tertiary">我的</a>
+      <a href="#about" class="btn btn-about">关于</a>
+    </div>
   </main>
 </body>
 </html>
