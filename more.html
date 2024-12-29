@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Projects - luyespace</title>
+  <style>
+    body, main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 2.5em;
+    }
+    .repo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .repo-link {
+      font-size: 1.2em;
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .repo-link:hover {
+      color: #0056b3;
+    }
+    .btn-back {
+      margin-top: 30px;
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>My GitHub Repositories</h1>
+
+    <!-- GitHub 仓库链接 -->
+    <div class="repo-container">
+      <a href="https://github.com/your_username/repository1" class="repo-link" target="_blank">Repository 1</a>
+      <a href="https://github.com/your_username/repository2" class="repo-link" target="_blank">Repository 2</a>
+      <a href="https://github.com/your_username/repository3" class="repo-link" target="_blank">Repository 3</a>
+      <!-- 添加更多仓库链接 -->
+    </div>
+
+    <!-- 返回按钮 -->
+    <a href="index.html" class="btn-back">Back to Home</a>
+  </main>
+</body>
+</html>
