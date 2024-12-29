@@ -8,9 +8,8 @@ layout: default
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luye's Personal Blog</title>
+  <title>luye</title>
   <style>
-    /* 基本样式 */
     body, main {
       display: flex;
       flex-direction: column;
@@ -19,15 +18,17 @@ layout: default
       min-height: 100vh;
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f4f4f4; /* 背景色调整为更柔和 */
     }
-    h1, h2 {
+    h1 {
+      margin-bottom: 20px;
       color: #333;
       font-size: 2.5em;
     }
     h2 {
-      font-size: 2em;
       margin-top: 20px;
+      color: #555;
+      font-size: 1.8em;
     }
     p {
       font-size: 1.2em;
@@ -37,34 +38,6 @@ layout: default
       text-align: center;
       margin: 10px 0;
     }
-
-    /* 页头和导航栏样式 */
-    header {
-      background-color: #333;
-      padding: 10px 0;
-      width: 100%;
-      text-align: center;
-    }
-    header nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    header nav ul li {
-      margin: 0 20px;
-    }
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-    header nav ul li a:hover {
-      color: #007bff;
-    }
-
-    /* 按钮容器 */
     .btn-container {
       display: flex;
       flex-wrap: wrap;
@@ -94,20 +67,13 @@ layout: default
     .btn-secondary:hover {
       background-color: #5a6268;
     }
-    .btn-tertiary {
-      background-color: #218838; /* 更深的绿色 */
+    .btn-more {
+      background-color: #28a745;
     }
-    .btn-tertiary:hover {
-      background-color: #1c7430; /* 更深的绿色在悬停时 */
+    .btn-more:hover {
+      background-color: #218838;
     }
-    .btn-about {
-      background-color: #17a2b8;
-    }
-    .btn-about:hover {
-      background-color: #138496;
-    }
-
-    /* 自我介绍部分 */
+   
     .intro-section {
       background-color: #ffffff;
       padding: 30px;
@@ -117,96 +83,14 @@ layout: default
       max-width: 900px;
       text-align: center;
     }
-
-    /* 技能展示 */
-    .skills-container {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-    .skill {
-      text-align: center;
-      max-width: 150px;
-    }
-    .skill img {
-      width: 50px;
-      height: 50px;
-    }
-    .skill-level {
-      height: 10px;
-      background-color: #28a745;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    /* 项目展示 */
-    .project-card {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-      border: 1px solid #ddd;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .project-card img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .project-info {
-      max-width: 600px;
-    }
-
-    /* 社交媒体链接 */
-    .social-links {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    .social-links a {
-      text-decoration: none;
-      color: #007bff;
-      font-size: 1.5em;
-    }
-
-    /* 响应式设计 */
-    @media (max-width: 768px) {
-      .btn-container {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .intro-section {
-        padding: 20px;
-      }
-    }
   </style>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">关于我</a></li>
-        <li><a href="#projects">我的项目</a></li>
-        <li><a href="#skills">我的技能</a></li>
-        <li><a href="#contact">联系我</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <main>
     <h1>Welcome to my blog - luyespace</h1>
 
     <!-- 自我介绍部分 -->
-    <section id="about" class="intro-section">
+    <div class="intro-section">
       <h2>About Me</h2>
       <p>
         Hi, I'm Luye, a passionate developer with a keen interest in technology and problem-solving. 
@@ -216,59 +100,16 @@ layout: default
       <p>
         When I'm not coding, you can find me reading tech blogs, exploring new programming languages, 
         or contributing to open-source projects. My goal is to create meaningful applications 
-        that make a difference in the world.
+        that make a difference in the world. 
       </p>
-    </section>
-
-    <!-- 我的技能 -->
-    <section id="skills">
-      <h2>My Skills</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <img src="html5-icon.png" alt="HTML5">
-          <p>HTML5</p>
-          <div class="skill-level" style="width: 90%"></div>
-        </div>
-        <div class="skill">
-          <img src="css3-icon.png" alt="CSS3">
-          <p>CSS3</p>
-          <div class="skill-level" style="width: 85%"></div>
-        </div>
-        <div class="skill">
-          <img src="javascript-icon.png" alt="JavaScript">
-          <p>JavaScript</p>
-          <div class="skill-level" style="width: 75%"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 我的项目 -->
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-card">
-        <img src="project1.jpg" alt="Project 1">
-        <div class="project-info">
-          <h3>Project 1</h3>
-          <p>A brief description of the project, the technologies used, and the features.</p>
-          <a href="https://github.com/111ly/learn" target="_blank" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <!-- 更多项目 -->
-    </section>
-
-    <!-- 联系我 -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <ul class="social-links">
-        <li><a href="3152911791@qq.com">Email</a></li>
-      </ul>
-    </section>
+     
+    </div>
 
     <!-- 按钮部分 -->
     <div class="btn-container">
       <a href="https://i.csdn.net/#/user-center/profile?spm=1000.2115.3001.5111" class="btn btn-primary">我的CSDN</a>
-      <a href="https://gitee.com/your_gitee_username" class="btn btn-secondary">我的Gitee</a>
-      <a href="more.html" class="btn btn-tertiary">更多</a>
+      <a href="https://gitee.com/flood1111" class="btn btn-secondary">我的Gitee</a>
+      <a href="more.html" class="btn btn-more">更多</a>
     </div>
   </main>
 </body>
