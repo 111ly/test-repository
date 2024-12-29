@@ -1,3 +1,58 @@
-remote_theme: pages-themes/leap-day@v0.2.0
+# remote_theme: pages-themes/leap-day@v0.2.0
+# plugins:
+# - jekyll-remote-theme # add this line to the plugins list if you already have one
+# 网站基本信息
+title: My Awesome Blog  # 博客标题
+description: This is my personal blog powered by Jekyll and Leap Day theme.  # 博客描述
+baseurl: ""  # 根 URL，如果托管在子路径下（例如 /blog），设置为 "/blog"
+url: "https://username.github.io"  # 替换为您的 GitHub Pages URL
+
+# 主题设置
+remote_theme: pages-themes/leap-day@v0.2.0  # 选择 Leap Day 主题
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme  # 远程主题支持插件
+  - jekyll-feed          # 添加 RSS 订阅支持
+  - jekyll-seo-tag       # 增加 SEO 支持
+  - jekyll-sitemap       # 自动生成 sitemap.xml
+  - jekyll-paginate      # 支持文章分页
+
+# 分页配置
+paginate: 5  # 每页显示 5 篇文章
+paginate_path: "/page:num"  # 分页 URL 格式
+
+# 作者信息
+author:
+  name: Your Name  # 您的名字
+  email: your.email@example.com  # 您的电子邮箱
+  twitter: your_twitter_handle  # 您的 Twitter 账号
+  github: your_github_handle  # 您的 GitHub 账号
+  linkedin: your_linkedin_handle  # 您的 LinkedIn 账号
+
+# 导航菜单
+menu:
+  - title: 首页
+    url: /
+  - title: 关于我
+    url: /about
+  - title: 联系
+    url: /contact
+
+# 博客元信息
+defaults:
+  - scope:
+      path: ""  # 应用到所有文件
+    values:
+      layout: post  # 默认布局
+      author: Your Name  # 默认作者名称
+
+# Markdown 配置
+markdown: kramdown
+highlighter: rouge
+
+# 输出文件设置
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
