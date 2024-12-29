@@ -5,7 +5,7 @@
 title: My Awesome Blog  # 博客标题
 description: This is my personal blog powered by Jekyll and Leap Day theme.  # 博客描述
 baseurl: ""  # 根 URL，如果托管在子路径下（例如 /blog），设置为 "/blog"
-url: "https://username.github.io"  # 替换为您的 GitHub Pages URL
+url: "https://111ly.github.io/test-repository/"  # 替换为您的 GitHub Pages URL
 
 # 主题设置
 remote_theme: pages-themes/leap-day@v0.2.0  # 选择 Leap Day 主题
