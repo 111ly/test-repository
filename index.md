@@ -1,6 +1,54 @@
 ---
-layout: home
-title: "首页"
+layout: default
 ---
 
-欢迎来到我的个人博客！这里是主页内容。
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>这里是whq的个人博客</title>
+  <style>
+    body, main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary {
+      background-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+    .btn-secondary:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>这里是whq的个人博客</h1>
+    <nav>
+      <a href="https://i.csdn.net/#/user-center/profile?spm=1000.2115.3001.5111" class="btn btn-primary">我的CSDN</a>
+      <a href="https://gitee.com/your_gitee_username" class="btn btn-secondary">我的Gitee</a>
+    </nav>
+  </main>
+</body>
+</html>
